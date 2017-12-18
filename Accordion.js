@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, TouchableHighlight } from 'react-native';
+import { View, TouchableWithoutFeedback } from 'react-native';
 import Collapsible from './Collapsible';
 import { ViewPropTypes } from './config';
 
@@ -28,7 +28,7 @@ export default class Accordion extends Component {
 
   static defaultProps = {
     underlayColor: 'black',
-    touchableComponent: TouchableHighlight,
+    touchableComponent: TouchableWithoutFeedback,
   };
 
   constructor(props) {
